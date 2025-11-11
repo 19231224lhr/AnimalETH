@@ -1,0 +1,175 @@
+{
+	"compiler": {
+		"version": "0.4.19+commit.c4cbbb05"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_AnimalId",
+						"type": "uint256"
+					},
+					{
+						"name": "_targetDna",
+						"type": "uint256"
+					}
+				],
+				"name": "feedAndGrow",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_AnimalId",
+						"type": "uint256"
+					},
+					{
+						"name": "_FoodId",
+						"type": "uint256"
+					}
+				],
+				"name": "feedOnFood",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "animals",
+				"outputs": [
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "dna",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "createRandomAnimal",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "ownerAnimalCount",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "animalToOwner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "AnimalId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"name": "dna",
+						"type": "uint256"
+					}
+				],
+				"name": "NewAnimal",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/AnimalFeeding_prc2.sol": "AnimalFeeding"
+		},
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/AnimalFeeding_prc2.sol": {
+			"keccak256": "0x0f00f9f0d92d29074577913d5c2a56dd190e6be08e14bc6a0fc31a288798c3fc",
+			"urls": [
+				"bzzr://55d87df2efac17d739ea26e8e43dd0a6958c9e12e91986a7421734ba390fef6c"
+			]
+		},
+		"contracts/AnimalIncubators_prc2.sol": {
+			"keccak256": "0x6408726ddf132274e63f194a22ae831e4011fad62beceefa13522a8a89933aa8",
+			"urls": [
+				"bzzr://bc49b220883160e2a7a92585263f22bcac7779e800a43e48be944f2dbd52dbbe"
+			]
+		}
+	},
+	"version": 1
+}
