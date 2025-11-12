@@ -7,21 +7,12 @@
 		"abi": [
 			{
 				"constant": true,
-				"inputs": [
-					{
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "animals",
+				"inputs": [],
+				"name": "owner",
 				"outputs": [
 					{
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"name": "dna",
-						"type": "uint256"
+						"name": "",
+						"type": "address"
 					}
 				],
 				"payable": false,
@@ -32,36 +23,37 @@
 				"constant": false,
 				"inputs": [
 					{
-						"name": "_name",
-						"type": "string"
+						"name": "newOwner",
+						"type": "address"
 					}
 				],
-				"name": "createRandomAnimal",
+				"name": "transferOwnership",
 				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": false,
-						"name": "AnimalId",
-						"type": "uint256"
+						"indexed": true,
+						"name": "previousOwner",
+						"type": "address"
 					},
 					{
-						"indexed": false,
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"indexed": false,
-						"name": "dna",
-						"type": "uint256"
+						"indexed": true,
+						"name": "newOwner",
+						"type": "address"
 					}
 				],
-				"name": "NewAnimal",
+				"name": "OwnershipTransferred",
 				"type": "event"
 			}
 		],
@@ -74,7 +66,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/AnimalIncubators_prc1.sol": "AnimalIncubators"
+			"contracts/ownable.sol": "Ownable"
 		},
 		"libraries": {},
 		"optimizer": {
@@ -84,10 +76,10 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/AnimalIncubators_prc1.sol": {
-			"keccak256": "0x6625821ba42ae252f10c8cc67353fb368cd289a60a30f57559ddb8ba3cb4cdeb",
+		"contracts/ownable.sol": {
+			"keccak256": "0x0dfeb95afb78068ea9e385d4b6609d4206cbee07f55ab0082abfcb7eaca9b140",
 			"urls": [
-				"bzzr://df41402b3f1f1a8c79d8c6c57eeae5b9bb528ac5985c5e17e7fda80d53fb9bd8"
+				"bzzr://4f37d5fa7acb6c0df41a4a8ca63f8585c94bd71280db54fad8f961f6d5a38035"
 			]
 		}
 	},

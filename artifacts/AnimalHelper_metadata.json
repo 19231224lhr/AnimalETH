@@ -7,6 +7,15 @@
 		"abi": [
 			{
 				"constant": false,
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
 				"inputs": [
 					{
 						"name": "_AnimalId",
@@ -24,6 +33,43 @@
 				"type": "function"
 			},
 			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_AnimalId",
+						"type": "uint256"
+					},
+					{
+						"name": "_newDna",
+						"type": "uint256"
+					}
+				],
+				"name": "changeDna",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "getAnimalsByOwner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"constant": true,
 				"inputs": [],
 				"name": "owner",
@@ -35,6 +81,20 @@
 				],
 				"payable": false,
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_fee",
+						"type": "uint256"
+					}
+				],
+				"name": "setPowerUpFee",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -72,6 +132,20 @@
 				"constant": false,
 				"inputs": [
 					{
+						"name": "_animalId",
+						"type": "uint256"
+					}
+				],
+				"name": "powerUp",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
 						"name": "_name",
 						"type": "string"
 					}
@@ -99,6 +173,24 @@
 				],
 				"payable": false,
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_AnimalId",
+						"type": "uint256"
+					},
+					{
+						"name": "_newName",
+						"type": "string"
+					}
+				],
+				"name": "changeName",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -132,6 +224,20 @@
 				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "powerUpFee",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -183,7 +289,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/AnimalFeeding_prc3.sol": "AnimalFeeding"
+			"contracts/AnimalHelper_prc4.sol": "AnimalHelper"
 		},
 		"libraries": {},
 		"optimizer": {
@@ -197,6 +303,12 @@
 			"keccak256": "0x4233999ea3ce7c764124741eb448c0f6fd21663624c8047d50f0e71cb09880aa",
 			"urls": [
 				"bzzr://a1d50e30bae296fae8f68b36a290bf92208884d1917430f519e7bf647c65fed4"
+			]
+		},
+		"contracts/AnimalHelper_prc4.sol": {
+			"keccak256": "0x84c1fd96cea90babad2064ab9065bbc933c8bd45bbfeca7ae89904e67c48a684",
+			"urls": [
+				"bzzr://cb9be7b4cbf8d231030fa16c8dacce6b400a9fd2aad6ce9f5d176c5ff838c934"
 			]
 		},
 		"contracts/AnimalIncubators_prc3.sol": {
